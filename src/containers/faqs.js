@@ -17,8 +17,7 @@ export function FaqsContainer() {
                 <OptForm.Button>멤버십 재가입</OptForm.Button>
                 <OptForm.Break />
                 <OptForm.Text>
-                    넷플릿스를 시청할 준비가 되셨습니까? 
-                    계정을 생성하거나 멤버십에 가입하세요!
+                    시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.
                 </OptForm.Text>
             </OptForm>
         </Accordion>
