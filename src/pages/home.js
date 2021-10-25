@@ -21,9 +21,9 @@ export default function Home() {
                         <OptForm.Text>
                             시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.
                         </OptForm.Text>
+                        <OptForm.Break />
                         <OptForm.Input placeholder="Email Address" />
                         <OptForm.Button>멤버십 재가입</OptForm.Button>
-                        <OptForm.Break />
                     </OptForm>
                 </Feature>
             </HeaderContainer>
