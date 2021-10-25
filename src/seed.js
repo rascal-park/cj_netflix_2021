@@ -20,25 +20,25 @@ export function seedDatabase(firebase) {
             "메이저리그 대신 감옥으로 직행한 슈퍼스타. 판이 바뀌고 룰이 바뀐 막다른 골목, 감빵에서 살아남을 방법은 단 한가지. 그저 배워라!",
         genre: "korea",
         maturity: "15",
-        slug: "슬기로운 감빵생활"
+        slug: "슬기로운감빵생활"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
         title: "스위트 홈 - (★ 4.0/5.0)",
         description:
-            "A세상을 차단하고 방 안에 틀어박힌 10대 소년. 현수가 세상 밖으로 나온다. 인간이 괴물로 변했다. 그래도 살아야 한다.",
+            "세상을 차단하고 방 안에 틀어박힌 10대 소년. 현수가 세상 밖으로 나온다. 인간이 괴물로 변했다. 그래도 살아야 한다.",
         genre: "korea",
         maturity: "18",
-        slug: "스위트 홈"
+        slug: "스위트홈"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
         title: "경이로운 소문 - (★ 3.8/5.0)",
         description:
-            "무 닫고 가자! 낮에는 국수집 직원, 밤에는 악귀를 때려잡는 사냥꾼. 이승과 저승을 오가는 카운터들의 세계에 경이로운 소년, 소문이 들어온다.",
+            "문 닫고 가자! 낮에는 국수집 직원, 밤에는 악귀를 때려잡는 사냥꾼. 이승과 저승을 오가는 카운터들의 세계에 경이로운 소년, 소문이 들어온다.",
         genre: "korea",
         maturity: "15",
-        slug: "경이로운 소문"
+        slug: "경이로운소문"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
@@ -47,7 +47,7 @@ export function seedDatabase(firebase) {
             "비극과 배신이 삶을 덮친다. 기이하고 불길한 뭔가를 발견한다. 한순간에 가족과 동족을 잃은 여인. 오직 복수를 꿈꾸며 살아오 그녀가 짙은 어둠을 마주한다.",
         genre: "korea",
         maturity: "18",
-        slug: "킹덤 아신전"
+        slug: "킹덤아신전"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
@@ -76,13 +76,13 @@ export function seedDatabase(firebase) {
             "마침내 탄지로의 칼날이 모두 벼려졌다! 피에 굶주린 혈귀의 습격으로 가족을 잃고 여동생마저 저주에 걸린 소년. 가혹한 운명의 사슬을 끊어내고 세상에서 혈귀를 멸하라!",
         genre: "etc",
         maturity: "18",
-        slug: "귀멸의 칼날"
+        slug: "귀멸의칼날"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
         title: "종이의집 - (★ 4.8/5.0)",
         description:
-            "1명의 처재, 8명의 공범, 철저히 주비한 세기의 강도. 스페인 조폐국에서 인질극까지 벌인 이들은 과연 포위 경찰을 따돌리고 거액의 돈과 함께 달아날 수 있을까?",
+            "1명의 천재, 8명의 공범, 철저히 주비한 세기의 강도. 스페인 조폐국에서 인질극까지 벌인 이들은 과연 포위 경찰을 따돌리고 거액의 돈과 함께 달아날 수 있을까?",
         genre: "etc",
         maturity: "18",
         slug: "종이의집"
@@ -91,10 +91,10 @@ export function seedDatabase(firebase) {
         id: getUUID(),
         title: "기묘한 이야기 - (★ 4.8/5.0)",
         description:
-            "친궤 집에서 자신의 집으로 돌아가던 중 윌은 무언가 이상한 것을 보게되고, 윌이 있는 곳에서 가까운 정부의 비밀 실험실에서는 끔찍한 일이 벌어진다.",
+            "친구 집에서 자신의 집으로 돌아가던 중 윌은 무언가 이상한 것을 보게되고, 윌이 있는 곳에서 가까운 정부의 비밀 실험실에서는 끔찍한 일이 벌어진다.",
         genre: "etc",
         maturity: "15",
-        slug: "기묘한 이야기"
+        slug: "기묘한이야기"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
@@ -112,7 +112,7 @@ export function seedDatabase(firebase) {
             "소심한 소년 오티스의 대반전, 그가 아웃사이더 소녀와 함께 섹스 클리닉을 연다. 성 상담사 엄마에게 귀동냥한 산지식을 모두 전수해 드려요!",
         genre: "etc",
         maturity: "18",
-        slug: "오티스의 비밀상담소"
+        slug: "오티스의비밀상담소"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
@@ -230,7 +230,7 @@ export function seedDatabase(firebase) {
         id: getUUID(),
         title: "종이의집 - (★ 4.8/5.0)",
         description:
-            "1명의 처재, 8명의 공범, 철저히 주비한 세기의 강도. 스페인 조폐국에서 인질극까지 벌인 이들은 과연 포위 경찰을 따돌리고 거액의 돈과 함께 달아날 수 있을까?",
+            "1명의 천재, 8명의 공범, 철저히 주비한 세기의 강도. 스페인 조폐국에서 인질극까지 벌인 이들은 과연 포위 경찰을 따돌리고 거액의 돈과 함께 달아날 수 있을까?",
         genre: "pop",
         maturity: "18",
         slug: "종이의집"
@@ -253,7 +253,7 @@ export function seedDatabase(firebase) {
             "유재석과 허당 탐정들의 예측불허 추리 예능. 당신이 웃어 넘긴 모든 순간이 단서가 된다!",
         genre: "original",
         maturity: "15",
-        slug: "범인은 바로 너"
+        slug: "범인은바로너"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
@@ -280,7 +280,7 @@ export function seedDatabase(firebase) {
             "침묵하고 복종하면 폭력의 제물이 될 뿐이다. 허울 좋은 학교, 그곳의 비밀고 거짓말을 폭로하는 난노.",
         genre: "original",
         maturity: "18",
-        slug: "그녀의 이름은 난노"
+        slug: "그녀의이름은난노"
     });
     firebase.firestore().collection("series").add({
         id: getUUID(),
@@ -367,7 +367,7 @@ export function seedDatabase(firebase) {
             "세 젊은이가 2차 세계 대전의 포화 속으로 들어간다. 연합군의 글라이더 조종사, 네덜란드 출신의 독일군 그리고 레지스탕스로, 방법은 달랐지만, 이들이 원한 건 오직 자유, 그 하나였다.",
         genre: "pop",
         maturity: "18",
-        slug: "더 포가튼 배틀"
+        slug: "더포가튼배틀"
     });
     firebase.firestore().collection("films").add({
         id: getUUID(),
@@ -385,7 +385,7 @@ export function seedDatabase(firebase) {
             "마녀가 지배하는 신비한 세계에 발을 들여놓은 치히로, 마녀에게 거역하는 자는 동물로 변하게 되는데...",
         genre: "pop",
         maturity: "0",
-        slug: "센과 치히로의 행방불명"
+        slug: "센과치히로의행방불명"
     });
     firebase.firestore().collection("films").add({
         id: getUUID(),
@@ -414,7 +414,7 @@ export function seedDatabase(firebase) {
             "거액의 상금이 걸린 방 탈출 게임에 초대된 6명의 남녀, 초대장만 믿고 세계 최고 방 탈출 게임회사에 모인다. 하지만 예고도 없이 게임은 바로 시작되고, 오감의 공포가 극한까지 조여온다.",
         genre: "replay",
         maturity: "15",
-        slug: "이스케이프 룸"
+        slug: "이스케이프룸"
     });
     firebase.firestore().collection("films").add({
         id: getUUID(),
@@ -470,7 +470,7 @@ export function seedDatabase(firebase) {
             "주인 잘 만나 뉴욕에서 제일 복 많은 개라고 자부하던 맥스. 완벽한 견생에 금이 가기 시작한다. 주인이 유기견 보호소에서 뜨내기 개를 데려오면서. 형제처럼 사이좋게 지내라는데, 우애는 개뿔.",
         genre: "etc",
         maturity: "0",
-        slug: "마이펫의 이중생활"
+        slug: "마이펫의이중생활"
     });
     firebase.firestore().collection("films").add({
         id: getUUID(),
@@ -479,7 +479,7 @@ export function seedDatabase(firebase) {
             "지구 구하는 일이 어디 쉽나? 슈퍼히어로에게도 휴식이 필요한 법. 학교 친구들과 유럽 여행을 떠난 스파이더맨, 피터파커. 하지만 세상에 새로운 빌런이 등장해 여행을 망쳐 놓는다.",
         genre: "etc",
         maturity: "12",
-        slug: "스파이더맨 파프롬홈"
+        slug: "스파이더맨파프롬홈"
     });
     firebase.firestore().collection("films").add({
         id: getUUID(),
@@ -535,7 +535,7 @@ export function seedDatabase(firebase) {
             "괴짜 윌리 웡카의 초콜릿 공장을 견학하게 된 행운의 어린이 5명은 그가 만들어내는 놀라운 과자의 비밀을 알게 된다.",
         genre: "kids",
         maturity: "0",
-        slug: "찰리와 초콜릿공장"
+        slug: "찰리와초콜릿공장"
     });
     firebase.firestore().collection("films").add({
         id: getUUID(),
@@ -544,7 +544,7 @@ export function seedDatabase(firebase) {
             "짱구네 유치원에 새친구가 전학왔다. 그리고 이상한 꿈을꾸기 시작하는 동네 사람들. 처음엔 바라는 모든 것이 이뤄지는 행복한 꿈인 줄 알았지만, 점차 알목으로 변해간다!",
         genre: "kids",
         maturity: "0",
-        slug: "짱구는 못말려"
+        slug: "짱구는못말려"
     });
     firebase.firestore().collection("films").add({
         id: getUUID(),
@@ -553,7 +553,7 @@ export function seedDatabase(firebase) {
             "온 마을을 공포에 떨게 했던 악당이 돌아온다. 그를 막을 영웅은? 푸근한 몸매, 친근한 뱃살의 포. 마을의 평화를 지킬 무림고수로 다시 태어나기 위해 수련을 시작한다.",
         genre: "kids",
         maturity: "0",
-        slug: "쿵푸 팬더"
+        slug: "쿵푸팬더"
     });
     firebase.firestore().collection("films").add({
         id: getUUID(),
@@ -571,6 +571,6 @@ export function seedDatabase(firebase) {
             "마녀가 지배하는 신비한 세계에 발을 들여놓은 치히로, 마녀에게 거역하는 자는 동물로 변하게 되는데...",
         genre: "kids",
         maturity: "0",
-        slug: "센과 치히로의 행방불명"
+        slug: "센과치히로의행방불명"
     });
 }
