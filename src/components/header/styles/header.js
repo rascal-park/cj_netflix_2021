@@ -206,4 +206,5 @@ export const FeatureCallOut = styled.h2`
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
     margin: 0;
     margin-bottom: 20px;
+    #margin-top: 100px;
 `;
