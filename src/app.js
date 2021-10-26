@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Home, Browse, Signin, Signup } from './pages';
 import * as ROUTES from './constants/routes';
 import { IsUserRedirect, ProtectedRoute } from './helpers/routes';
@@ -9,7 +9,7 @@ export default function App() {
   const { user } = useAuthListener();
 
   return (
-    <HashRouter>
+    <Router basename="/cj_netflix_2021">
       <IsUserRedirect 
         user={user} 
         loggedInPath={ROUTES.BROWSE} 
@@ -38,6 +38,6 @@ export default function App() {
       >
         <Home />
       </IsUserRedirect>
-    </HashRouter>
+    </Router>
   );
 }

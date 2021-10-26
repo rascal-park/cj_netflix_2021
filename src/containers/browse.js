@@ -117,7 +117,7 @@ export function BrowseContainer({ slides }) {
                             {slideItem.data.map((item) => (
                                 <Card.Item key={item.docId} item={item}>
                                     <Card.Image
-                                        src={`./images/${category}/${item.genre}/${item.slug}/small.png`}
+                                        src={`/images/${category}/${item.genre}/${item.slug}/small.png`}
                                     />
                                     <Card.Meta>
                                         <Card.SubTitle>
@@ -133,7 +133,7 @@ export function BrowseContainer({ slides }) {
                         <Card.Feature category={category}>
                             <Player>
                                 <Player.Button2 />
-                                <Player.Video src='./videos/squid_game.mp4' />
+                                <Player.Video src='/videos/squid_game.mp4' />
                             </Player>
                         </Card.Feature>
                     </Card>
