@@ -36,7 +36,7 @@ Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
         <>
             <Player>
                 <Player.Button1 />
-                <Player.Video src="/videos/squid_game.mp4" />
+                <Player.Video src="./videos/squid_game.mp4" />
             </Player>
             {children}
         </>
@@ -45,7 +45,7 @@ Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
 
 Header.Picture = function HeaderPicture({ src, ...restProps }) {
     // @ts-ignore
-    return <Picture {...restProps} src={`/images/users/${src}.png`} />;
+    return <Picture {...restProps} src={`./images/users/${src}.png`} />;
 };
 
 Header.Profile = function HeaderProfile({ children, ...restProps }) {
@@ -109,7 +109,7 @@ Header.Search = function HeaderSearch({
                 onClick={() => setSearchActive((searchActive) => !searchActive)}
                 data-testid="search-click"
             >
-                <img src="/images/icons/search.png" alt="Search" />
+                <img src="./images/icons/search.png" alt="Search" />
             </SearchIcon>
             <SearchInput
                 value={searchTerm}

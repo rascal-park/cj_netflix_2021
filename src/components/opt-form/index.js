@@ -12,7 +12,7 @@ OptForm.Button = function OptFormButton({ children, ...restProps }) {
     return (
         <Button {...restProps}>
             {children}{" "}
-            <img src="/images/icons/chevron-right.png" alt="Try now" />
+            <img src="./images/icons/chevron-right.png" alt="Try now" />
         </Button>
     );
 };
