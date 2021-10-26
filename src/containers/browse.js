@@ -1,5 +1,7 @@
 import { useContext, useState, useEffect } from "react";
+import Fuse from "fuse.js";
 import { SelectProfileContainer } from "./profiles";
+import { FooterContainer } from "./footer";
 import { FirebaseContext } from "../context/firebase";
 import { Card, Header, Loading, Player } from "../components";
 import * as ROUTES from "../constants/routes";
@@ -24,6 +26,25 @@ export function BrowseContainer({ slides }) {
     useEffect(() => {
         setSlideRows(slides[category]);
     }, [slides, category]);
+
+    useEffect(() => {
+        const fuse = new Fuse(slideRows, {
+            keys: ["data.description", "data.title", "data.genre"]
+        });
+
+        const results = fuse.search(searchTerm).map(({ item }) => item);
+
+        if (
+            slideRows.length > 0 &&
+            searchTerm.length > 1 &&
+            results.length > 0
+        ) {
+            setSlideRows(results);
+        } else {
+            setSlideRows(slides[category]);
+        }
+        // eslint-disable-next-line
+    }, [searchTerm]);
 
     return profile.displayName ? (
         <>
@@ -84,7 +105,7 @@ export function BrowseContainer({ slides }) {
                         하지만 모두 승자가 될 순 없는 법. 
                         탈락하는 이들은 끔찍한 결과를 각오해야 한다.
                     </Header.Text>
-                    <Header.PlayButton>Play</Header.PlayButton>
+                    <Header.PlayButton />
                 </Header.Feature>
             </Header>
 
@@ -110,17 +131,15 @@ export function BrowseContainer({ slides }) {
                             ))}
                         </Card.Entities>
                         <Card.Feature category={category}>
-                            <p>Hello!!</p>
-                            {/*
-                            <Player>
-                                <Player.Button />
-                                <Player.Video src="/videos/squid_game.mp4" />
-                            </Player>
-                            */}
-                            </Card.Feature>
+                                <Player>
+                                    <Player.Button />
+                                    <Player.Video src="/videos/squid_game.mp4" />
+                                </Player>
+                        </Card.Feature>
                     </Card>
                 ))}
             </Card.Group>
+            <FooterContainer />
         </>
     ) : (
         <SelectProfileContainer user={user} setProfile={setProfile}/>

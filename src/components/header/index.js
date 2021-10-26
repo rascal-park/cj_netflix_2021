@@ -17,9 +17,9 @@ import {
     Group,
     Search,
     SearchIcon,
-    SearchInput,
-    PlayButton
+    SearchInput
 } from "./styles/header";
+import { Player } from "..";
 
 export default function Header({ bg = true, children, ...restProps }) {
     return bg ? (
@@ -32,7 +32,15 @@ export default function Header({ bg = true, children, ...restProps }) {
 }
 
 Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
-    return <PlayButton {...restProps}>{children}</PlayButton>;
+    return (
+        <>
+            <Player>
+                <Player.Button />
+                <Player.Video src="/videos/squid_game.mp4" />
+            </Player>
+            {children}
+        </>
+    );
 };
 
 Header.Picture = function HeaderPicture({ src, ...restProps }) {
