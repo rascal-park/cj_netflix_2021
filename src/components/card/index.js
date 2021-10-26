@@ -18,7 +18,6 @@ import {
     Image
 } from "./styles/card";
 
-
 export const FeatureContext = createContext();
 
 export default function Card({ children, ...restProps }) {

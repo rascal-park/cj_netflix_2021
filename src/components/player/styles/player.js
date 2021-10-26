@@ -26,7 +26,26 @@ export const Inner = styled.div`
     }
 `;
 
-export const Button = styled.button`
+export const Button1 = styled.button`
+    box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+    background-color: #e6e6e6;
+    color: #000;
+    border-width: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 130px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color: #ff1e1e;
+        color: white;
+    }
+`;
+
+export const Button2 = styled.button`
     background-color: #e50914;
     border-color: #ff0a10;
     border-radius: 10%;

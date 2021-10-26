@@ -35,7 +35,7 @@ Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
     return (
         <>
             <Player>
-                <Player.Button />
+                <Player.Button1 />
                 <Player.Video src="/videos/squid_game.mp4" />
             </Player>
             {children}

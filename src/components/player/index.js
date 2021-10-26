@@ -1,6 +1,6 @@
 import { useState, useContext, createContext } from "react";
 import ReactDOM from "react-dom";
-import { Container, Button, Overlay, Inner } from "./styles/player";
+import { Container, Button1, Button2, Overlay, Inner } from "./styles/player";
 
 export const PlayerContext = createContext(null);
 
@@ -22,7 +22,6 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
               <Overlay
                   onClick={() => setShowPlayer(false)}
                   {...restProps}
-                  data-testid="player"
               >
                   <Inner>
                       <video id="netflix-player" controls>
@@ -35,17 +34,32 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
         : null;
 };
 
-Player.Button = function PlayerButton({ ...restProps }) {
+Player.Button1 = function PlayerButton1({ ...restProps }) {
     // @ts-ignore
     const { showPlayer, setShowPlayer } = useContext(PlayerContext);
 
     return (
-        <Button
+        <Button1
             // eslint-disable-next-line no-shadow
             onClick={() => setShowPlayer((showPlayer) => !showPlayer)}
             {...restProps}
         >
-            Play
-        </Button>
+            ▶&nbsp;&nbsp;재생
+        </Button1>
+    );
+};
+
+Player.Button2 = function PlayerButton2({ ...restProps }) {
+    // @ts-ignore
+    const { showPlayer, setShowPlayer } = useContext(PlayerContext);
+
+    return (
+        <Button2
+            // eslint-disable-next-line no-shadow
+            onClick={() => setShowPlayer((showPlayer) => !showPlayer)}
+            {...restProps}
+        >
+            ▶&nbsp;&nbsp;재생
+        </Button2>
     );
 };
