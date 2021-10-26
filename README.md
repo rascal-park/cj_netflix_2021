@@ -3,7 +3,7 @@
 React를 활용한 Web AppliCation - (Netflix).
 
 ## Demo
-URL :: 
+URL :: https://rascal-park.github.io/cj_netflix_2021/
 
 ## 참고 자료
 1. 
